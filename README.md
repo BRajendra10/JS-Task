@@ -1,2 +1,2 @@
 # JavaScript
-A js repository which containe all the js projects and task files.
+A js repository which containe all the task files(RNW).

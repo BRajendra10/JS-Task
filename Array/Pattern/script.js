@@ -26,13 +26,4 @@ for(let i = n; i < n+n; i++){
   k--;
 }
 
-
 console.log(pattern);
-
-// TODO: 
-// when the user input the number acording to that pattern should be formed.
-// make a array n*n
-// print numbers acording to the given pattern using loop or anything nessesary.
-
-// FIXME:
-// i have made array so i have to focus on printing number.

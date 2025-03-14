@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let num = 1;
+        let startIndex = 1;
+        let n = prompt("Enter a number: ");
+        n = parseInt(n);
+
+        for(let i = 1; i <= n; i++) {
+            for(let j = 1; j < i; j++){
+                document.write("_ _");
+            }
+            for(let k = i; k <= n; k++) { 
+                document.write(`${num} `);
+                num+=k;
+            }
+            for(let l = n-1; l >= i; l--){
+                document.write(`${num} `);
+                num+=l;
+            }
+            for(let m = 1; m <= i; m++) {
+                if(i == m) {
+                    console.log(startIndex, );
+                    let a = m+=1;
+
+                    startIndex = a+startIndex;
+                    num = startIndex;
+                }
+
+                // console.log(m);
+            }
+            document.write('<br>');
+        }
+    </script>
+</body>
+</html>

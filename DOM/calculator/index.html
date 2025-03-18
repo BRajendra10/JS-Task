@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            list-style: none;
+            text-decoration: none;
+        }
+        .container{
+            width: 350px;
+            height: fit-content;
+            box-shadow: 0 0 10px gray;
+            padding: 10px;
+            border-radius: 7px;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+        }
+        .box-container{
+            width: 100%;
+            height: 70px;
+            border: 2px solid black;
+            margin: 10px 0;
+            padding: 0 7px;
+            line-height: 70px;
+            font-size: 33px;
+            text-align: right;
+        }
+        .buttons{
+            width: 100%;
+            height: 350px;
+            padding: 10px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+        .btn{
+            width: 100%;
+            height: 100%;
+            border-radius: 7px;
+            font-size: 22px;
+        }
+    </style>
+</head>
+<body>
+    
+    <ul class="container">
+        <div class="box-container"></div>
+        <ul class="buttons">
+            <li><button class="btn" id="seven">7</button></li>
+            <li><button class="btn" id="eight">8</button></li>
+            <li><button class="btn" id="nine">9</button></li>
+            <li><button class="btn" id="plus">+</button></li>
+            <li><button class="btn" id="four">4</button></li>
+            <li><button class="btn" id="five">5</button></li>
+            <li><button class="btn" id="six">6</button></li>
+            <li><button class="btn" id="minus">-</button></li>
+            <li><button class="btn" id="one">1</button></li>
+            <li><button class="btn" id="two">2</button></li>
+            <li><button class="btn" id="three">3</button></li>
+            <li><button class="btn" id="multi">*</button></li>
+            <li><button class="btn" id="delete">del</button></li>
+            <li><button class="btn" id="zero">0</button></li>
+            <li><button class="btn" id="equal">=</button></li>
+            <li><button class="btn" id="division">/</button></li>
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

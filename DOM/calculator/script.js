@@ -1,4 +1,4 @@
-const box = document.getElementsByClassName('box-container');
+const box = document.getElementsByClassName('box-container')[0];
 
 const one = document.getElementById('one');
 const two = document.getElementById('two');
@@ -16,6 +16,7 @@ const minus = document.getElementById('minus');
 const multi = document.getElementById('multi');
 const division = document.getElementById('division');
 const equal = document.getElementById('equal');
+const dele = document.getElementById('delete');
 
 let num1;
 let num2;
@@ -24,7 +25,7 @@ let calculate;
 let sequal = [];
 
 function display(n) {
-    box[0].innerHTML+=n;
+    box.innerHTML+=n;
 }
 
 function extract(n) {
@@ -62,8 +63,12 @@ function extract(n) {
 }
 
 equal.addEventListener('click', () => {
-    box[0].innerHTML = extract(sequal);
-})
+    box.innerHTML = extract(sequal);
+});
+
+dele.addEventListener('click', () => {
+    box.innerHTML = '';
+});
 
 plus.addEventListener('click', () => {
     sequal+=plus.innerHTML;

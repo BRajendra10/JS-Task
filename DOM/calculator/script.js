@@ -23,6 +23,9 @@ let symbol;
 let calculate;
 let sequal = [];
 
+function display(n) {
+    box[0].innerHTML+=n;
+}
 
 function extract(n) {
     for(let i = 0; i < sequal.length; i++) {

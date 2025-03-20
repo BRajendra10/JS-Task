@@ -1,0 +1,13 @@
+.container{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.input-field{
+    padding: 5px;
+}
+button{
+    padding: 5px;
+}

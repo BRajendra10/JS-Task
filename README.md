@@ -20,3 +20,19 @@
 
 ### Output
 <img src="https://github.com/BRajendra10/JS-Task/blob/ed633ce3c72cb18822ced8661e5cf0dd41a16f86/DOM/Background%20color%20changer/Background%20color%20changer.gif">
+
+---
+
+# Form Validation
+
+## Overview
+This JavaScript-based Sign-Up Form Validation ensures that users enter valid information before submitting the form. The validation process checks each input field for correctness and provides feedback through alerts.
+
+## How It Works
+
+- Name Field: Must not contain numbers or special characters.
+- Email Field: Must be in lowercase and end with @gmail.com.
+- Password Field: Must include at least one number, one special character, and match the confirm password field.
+- If any field is empty, an alert prompts the user to fill in all fields.
+- If invalid input is detected, a specific error message is displayed.
+- If all conditions are met, a success message confirms successful sign-up.

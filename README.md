@@ -21,7 +21,6 @@
 ### Output
 <img src="https://github.com/BRajendra10/JS-Task/blob/ed633ce3c72cb18822ced8661e5cf0dd41a16f86/DOM/Background%20color%20changer/Background%20color%20changer.gif">
 
-- [🔗 View LinkedIn Post](https://www.linkedin.com/feed/update/urn:li:activity:7309153498724499456/)
 ---
 
 # Form Validation

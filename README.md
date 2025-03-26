@@ -37,3 +37,6 @@ This JavaScript-based Sign-Up Form Validation ensures that users enter valid inf
 - If any field is empty, an alert prompts the user to fill in all fields.
 - If invalid input is detected, a specific error message is displayed.
 - If all conditions are met, a success message confirms successful sign-up.
+
+### Output
+<img src="https://github.com/BRajendra10/JS-Task/blob/714490a75560289db5e667ecbb2c61ea770fd9a9/DOM/Form%20validation/Form%20validation.gif">

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // wap to create a class for employee with attributes like id ,name,salary and role, set all attributes
+        // and get for atleast 3 objects/employee.
+
+        class Employee{
+            name;
+            id;
+            salary;
+            role;
+
+            employee(name, id, salary, role){
+                this.name = name;
+                this.id = id;
+                this.salary = salary;
+                this.role = role;
+            }
+
+            output(){
+                document.writeln(this.name);
+                document.writeln(this.id);
+                document.writeln(this.salary);
+                document.writeln(this.role);
+                document.writeln('<br>');
+            }
+        }
+
+        const employee1 = new Employee();
+        const employee2 = new Employee();
+        const employee3 = new Employee();
+
+        employee1.employee('Rajendra', 107, 500000, 'Full-stack developer');
+        employee1.output();
+        employee2.employee('Samit', 535, 400000, 'back-end developer');
+        employee2.output();
+        employee1.employee('Ashish', 259, 300000, 'front-end developer');
+        employee1.output();
+    </script>
+</body>
+</html>

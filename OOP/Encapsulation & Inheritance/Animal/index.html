@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // wap to craete a class for animal with attribute like name,type,gender and age, make these all
+        // attribute private to secure direct access of the users, perform input and output for 3 defferent
+        // animals.
+
+        class Animals{
+            #name;
+            #gender;
+            #age;
+
+            animal(name, gender, age){
+                this.#name = name;
+                this.#gender = gender;
+                this.#age = age;
+            }
+
+            output(){
+                document.writeln(this.#name);
+                document.writeln(this.#gender);
+                document.writeln(this.#age);
+                document.writeln('<br>');
+            }
+        }
+
+        const animal1 = new Animals();
+        const animal2 = new Animals();
+        const animal3 = new Animals();
+
+        animal1.animal('lion', 'male', 20);
+        animal2.animal('Tiger', 'male', 25);
+        animal3.animal('cheetah', 'male', 28);
+
+        animal1.output();
+        animal2.output();
+        animal3.output();
+
+    </script>
+</body>
+</html>

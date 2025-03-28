@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // create a class named student with private attributes roll_no,name,age,std and percentage, initialize
+        // all attributes by parameterized constructor(private attributes need to declare in global scope in class)
+        // and print all details for 3 students.
+
+        class Student{
+            #name;
+            #age;
+            #roll_no;
+            #std;
+            #persentage;
+
+            constructor(name, age, roll_no, std, persentage){
+                this.#name = name;
+                this.#age = age;
+                this.#roll_no = roll_no;
+                this.#std = std;
+                this.#persentage = persentage;
+            }
+
+            output(){
+                document.writeln(this.#name);
+                document.writeln(this.#age);
+                document.writeln(this.#roll_no);
+                document.writeln(this.#std);
+                document.writeln(this.#persentage);
+                document.writeln('<br>');
+            }
+        }
+
+        const student1 = new Student("Rajendra", 17, 24, 12, 70);
+        const student2 = new Student("Manoj", 17, 20, 12, 80);
+        const student3 = new Student("Krishna", 17, 24, 12, 50);
+
+        student1.output();
+        student2.output();
+        student3.output();
+    </script>
+</body>
+</html>

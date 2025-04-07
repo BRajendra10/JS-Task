@@ -1,40 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <script>
-        // wap to perform method overloading to find sum of 2 to 4 arguments.
-        // ex. sum(10,20), sum(10,20,30), sum(_....4)
+      class Maths {
+        #sum;
 
-        class Maths{
-            #num1;
-            #num2;
-            #num3;
-            #num4;
-            #sum
-
-            sum(num1, num2, num3, num4){
-                if(typeof num4 == "number" && typeof num3 == "number"){
-                    this.sum = num1+num2+num3+num4;
-                }else if(typeof num3 == "number"){
-                    this.sum = num1+num2+num3;
-                }else{
-                    this.sum = num1+num2;
-                }
-            }
-
-            output(){
-                document.writeln(this.sum);
-            }
+        sum(num1, num2, num3, num4) {
+          if (typeof num4 === "number" && typeof num3 === "number") {
+            this.#sum = num1 + num2 + num3 + num4;
+          } else if (typeof num3 === "number") {
+            this.#sum = num1 + num2 + num3;
+          } else {
+            this.#sum = num1 + num2;
+          }
         }
-        const math = new Maths();
 
-        math.sum(10, 20, 10, 10);
-        math.output();
+        output() {
+          document.writeln(`Sum = ${this.#sum}<br>`);
+        }
+      }
+
+      const math = new Maths();
+
+      math.sum(10, 20, 10, 10);
+      math.output();
+
+      math.sum(5, 15, 5);
+      math.output();
     </script>
-</body>
+  </body>
 </html>

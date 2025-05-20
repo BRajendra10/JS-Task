@@ -31,7 +31,7 @@ document.getElementById("form").addEventListener("submit", (el) => {
 function add_eliment() {
   table.innerHTML = "";
 
-  todo_data.forEach((el) => {
+  todo_data.forEach((el, index) => {
     const table_row = document.createElement("tr");
 
     const table_task = document.createElement("td");
@@ -46,7 +46,7 @@ function add_eliment() {
     table_button.style.color = "white";
 
     table_button.addEventListener("click", () => {
-      todo_data = todo_data.filter((item) => item.id !== el.id);
+      todo_data.splice(index, 1);
       localStorage.setItem("todo-data", JSON.stringify(todo_data));
       add_eliment();
     });
@@ -58,4 +58,3 @@ function add_eliment() {
     table.appendChild(table_row);
   });
 }
-
